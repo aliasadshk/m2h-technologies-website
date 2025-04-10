@@ -1,0 +1,191 @@
+/* styles/Pricing.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricingHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: solid black;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.pricingCard {
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.pricingCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.popularBadge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background-color: #FFD54F;
+  color: #333;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.iconWrapper {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.planTitle {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.pricing {
+  margin-bottom: 1rem;
+}
+
+.pricing p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.planDescription {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 1.5rem 0;
+}
+
+.features h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.features li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.checkmark {
+  color: #6366F1;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.ctaButton {
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.purpleButton {
+  background-color: #D8B4FE;
+  color: #333;
+}
+
+.purpleButton:hover {
+  background-color: #C084FC;
+  color: #fff;
+}
+
+.yellowButton {
+  background-color: #FFD54F;
+  color: #333;
+}
+
+.yellowButton:hover {
+  background-color: #FFCA28;
+}
+
+.redButton {
+  background-color: #FCA5A5;
+  color: #333;
+}
+
+.redButton:hover {
+  background-color: #F87171;
+  color: #fff;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .pricingGrid {
+    grid-template-columns: 1fr;
+  }
+}
